@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "usable",
+    "version": "0.1.0",
+    "description": "Make the internet a bit more usable",
+    "author": "Rohith Reddy",
+    "icons": {
+        "128": "logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.hemingwayapp.com/*"
+            ],
+            "js": [
+                "usable.js"
+            ]
+        }
+    ]
+}
